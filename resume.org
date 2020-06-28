@@ -55,7 +55,7 @@
 * Experience
 ** Senior waiter {{{date(Jan 2011 -- Current)}}}
    /Chateaux Le Goog/
-   
+
    - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
    - Proin sagittis purus sed lorem convallis, luctus lobortis nibh fringilla.
    - Pellentesque dignissim sapien ac ex ullamcorper accumsan.
@@ -85,7 +85,7 @@
 
 ** Year 12 Certificate {{{date(2001)}}}                            :noexport:
    /Lorem Ipsum High/
-   
+
    - Quisque blandit turpis quis lacinia sagittis.
    - Aenean a justo tempor dui porta euismod.
 
@@ -97,7 +97,7 @@
   - Nunc sodales ex at felis semper dictum sed vitae ipsum.
 
 ** {{{pagebreak()}}}
-  
+
 * Skills and qualifications
   - Sed ac libero ullamcorper, suscipit odio quis, blandit nunc.
   - Praesent ac lacus id lorem laoreet fringilla.
