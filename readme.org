@@ -1,0 +1,17 @@
+An orgmode resume template that will export nicely to pdf, html and txt formats. It includes some ideas on how to adjust the pdf output to fit nicely within each page (pagebreaks, item spacing, page margins). Details are in the =resume.org= file.
+
+To use, simlpy fill in =resume.org= with your resume details and use the org-export feature of orgmode, choosing your desired output format. Examples given are:
+
+- [[file:./resume.pdf]]
+- [[file:./resume.html]]
+- [[file:./resume.txt]] (using utf-8 as I think it looks better, but ascii is an export options too)
+
+The =.tex= file is an intermediate file produced by org-export to pdf.
+
+The style can be modified with:
+
+| Format | Instructions                                                    |
+|--------+-----------------------------------------------------------------|
+| .pdf   | All latex preamble is contained in the =resume.org= file.         |
+| .html  | Tinker with the =stylesheet.css= file                             |
+| .txt   | Haven't bothered customising this, but I'm sure emacs has a way |
