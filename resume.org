@@ -1,0 +1,109 @@
+#+TITLE: Joe Bloggs
+#+AUTHOR: Joe Bloggs
+
+#+OPTIONS: toc:nil num:nil date:nil ':t
+#+MACRO: date @@latex: \hfill\normalfont{\small $1} @@ @@html: <div id=date>$1</div> @@ @@ascii: ($1) @@
+#+MACRO: pagebreak @@latex: \clearpage @@
+
+| *M*: 0000 000 000 | *E*: joe@bloggs.com |
+
+* Format                                                           :noexport:
+** Latex
+  Note: to manually fit content nicely to each page:
+  - Add in a heading =** {{{pagebreak()}}}= (This will only effect pdf output)
+  - Alter the value of \setlist{itemsep=??} (adjust spacing between bullet items)
+  - Adjust the page margins (geometry package)
+
+*** Page layout
+    #+LATEX_CLASS_OPTIONS: [a4paper,11pt]
+    #+LATEX_HEADER: \usepackage[left=3cm, right=3cm, top=2.7cm, bottom=2.7cm]{geometry}
+    #+LATEX_HEADER: \usepackage{parskip}
+    #+LATEX_HEADER: \usepackage{microtype}
+    #+LATEX_HEADER: \usepackage{enumitem}
+    #+LATEX_HEADER: \setlist{itemsep=-3pt} % Vert space between items/bullets
+    #+LATEX_HEADER: \setlist[itemize]{leftmargin=12pt}
+    #+LATEX_HEADER: \renewcommand{\labelitemi}{$\bullet$}
+    #+LATEX_HEADER: \usepackage{lastpage}
+    #+LATEX_HEADER: \usepackage{fancyhdr}
+    #+LATEX_HEADER: \pagestyle{fancy}
+    #+LATEX_HEADER: \fancyhf{}
+    #+LATEX_HEADER: \renewcommand{\headrulewidth}{0pt}
+    #+LATEX_HEADER: \cfoot{Page \thepage\ of \pageref{LastPage}}
+    #+LATEX_HEADER: \hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
+
+*** Font
+    #+LATEX_HEADER: \usepackage{lmodern}
+    #+LATEX_HEADER: \usepackage{xcolor}
+    #+LATEX_HEADER: \color[HTML]{333333}
+
+*** Title format
+    #+LATEX_HEADER: \usepackage{titling}
+    #+LATEX_HEADER: \definecolor{myaccent}{HTML}{1C6AAF}
+    #+LATEX_HEADER: \renewcommand{\maketitle}{{\centering {\color{myaccent}\huge\bfseries\theauthor}\par \vspace{4pt}}}
+
+*** Heading format
+    #+LATEX_HEADER: \usepackage{titlesec}
+    #+LATEX_HEADER: \titleformat*{\section}{\sffamily\raggedright\footnotesize\bfseries\color{myaccent}\uppercase}
+    #+LATEX_HEADER: \titleformat*{\subsection}{\raggedright\large\bfseries\color[HTML]{000000}}
+    #+LATEX_HEADER: \titlespacing*{\section}{0pt}{20pt}{8pt}
+    #+LATEX_HEADER: \titlespacing*{\subsection}{0pt}{20pt}{0pt}
+
+** HTML
+   #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+   #+OPTIONS: html-postamble:nil
+
+* Experience
+** Senior waiter {{{date(Jan 2011 -- Current)}}}
+   /Chateaux Le Goog/
+   
+   - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+   - Proin sagittis purus sed lorem convallis, luctus lobortis nibh fringilla.
+   - Pellentesque dignissim sapien ac ex ullamcorper accumsan.
+   - Mauris ut lorem at libero auctor viverra sit amet in dolor.
+
+** Junior waiter {{{date(Feb 2008 -- Dec 2010)}}}
+   /Grand-Flix/
+
+   - Pellentesque eget magna at erat convallis condimentum at sit amet dui.
+   - Nam ac augue eget diam laoreet dapibus et efficitur mi.
+   - Mauris ullamcorper massa eget erat convallis, et tincidunt tortor ultricies.
+   - Mauris vel felis lobortis, dapibus dolor quis, porttitor nibh.
+
+** Graduate waiter {{{date(Apr 2006 -- Jan 2008)}}}
+   /Regis on the Knuth/
+
+   - Maecenas sodales libero at magna feugiat condimentum.
+   - Nulla at metus at turpis maximus efficitur nec sed elit.
+
+* Education
+** Bachelor of Waiting (Scholars) {{{date(2002 -- 2005)}}}
+   /University of Dining/
+
+   - Duis id sapien hendrerit, tincidunt risus vel, aliquam orci.
+   - Nulla finibus dui ut ex lobortis tempor.
+   - Cras dapibus diam eu purus efficitur consectetur.
+
+** Year 12 Certificate {{{date(2001)}}}                            :noexport:
+   /Lorem Ipsum High/
+   
+   - Quisque blandit turpis quis lacinia sagittis.
+   - Aenean a justo tempor dui porta euismod.
+
+* Publications and conferences
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - Ut nec tellus sit amet purus consectetur sollicitudin et quis justo.
+  - Donec rhoncus lectus sed congue aliquam.
+  - Phasellus quis velit auctor, condimentum eros ac, maximus orci.
+  - Nunc sodales ex at felis semper dictum sed vitae ipsum.
+
+** {{{pagebreak()}}}
+  
+* Skills and qualifications
+  - Sed ac libero ullamcorper, suscipit odio quis, blandit nunc.
+  - Praesent ac lacus id lorem laoreet fringilla.
+  - Sed quis lectus eget dui mollis venenatis consectetur a neque.
+  - Curabitur tincidunt sem sed odio hendrerit, non luctus nisl ultricies.
+  - Curabitur accumsan turpis varius venenatis malesuada.
+
+* References                                                       :noexport:
+  References available upon request
